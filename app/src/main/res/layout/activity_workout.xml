@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WorkoutActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:src="@mipmap/ic_workout"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_how_many_minutes"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_minus_minutes"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/minus_button"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/tv_workout_minutes_exactly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="0 minutes"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_plus_minutes"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/plus_button"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="How many seconds?"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:id="@+id/btn_minus_seconds"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/minus_button"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/tv_workout_seconds_exactly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="@string/tv_prepare_time"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_plus_seconds"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/plus_button"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_workout_save_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="save"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:background="@drawable/custom_button"
+        android:onClick="onClick"/>
+
+</LinearLayout>

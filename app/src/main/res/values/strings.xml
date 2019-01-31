@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TabataTimer</string>
+    <string name="prepare_time">prepare time</string>
+    <string name="tv_prepare_time">0 seconds</string>
+    <string name="workout_time">workout time</string>
+    <string name="tv_minutes">0 min</string>
+    <string name="tv_seconds">0 sec</string>
+    <string name="btn_rounds">rounds</string>
+    <string name="tv_rounds">0 rounds</string>
+    <string name="btn_start">start</string>
+    <string name="tv_how_many_minutes">How many minutes?</string>
+    <string name="tv_how_many_rounds">0/0</string>
+    <string name="btn_stop_resume">STOP</string>
+    <string name="tv_countdown">GO!</string>
+    <string name="tv_how_many_seconds">How many seconds?</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_save">SAVE</string>
+    <string name="Tv_how_many_rounds">How many rounds?</string>
+</resources>
